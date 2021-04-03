@@ -1,0 +1,75 @@
+{
+    "title": "Developer Portfolio",
+    "description": "Developer portfolio",
+    "header": {
+        "type": "header",
+        "title": "dev",
+        "has_nav": true,
+        "nav_links": [
+            {
+                "type": "action",
+                "label": "Home",
+                "url": "#home",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "label": "About",
+                "url": "#about",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "label": "Portfolio",
+                "url": "#portfolio",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "label": "Blog",
+                "url": "#blog",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "label": "Contact",
+                "url": "#contact",
+                "style": "link"
+            }
+        ],
+        "logo_img": "https://avatars.githubusercontent.com/u/9257154?s=56&u=4ec9b1581ae46492648bde70a0500f60f2d866b5&v=4"
+    },
+    "footer": {
+        "type": "footer",
+        "content": "Location CDMX, Mexico. Copyright © 2020 - 2021. <br/> Make with love and",
+        "has_social": true,
+        "links": [
+            {
+                "url": "https://github.com/rigobertocanseco/",
+                "label": "Github"
+            },
+            {
+                "url": "https://dev.to/rigomortis/",
+                "label": "Dev.to"
+            }
+        ],
+        "social_links": [
+            {
+                "url": "https://bulma.io/",
+                "label": "Bulma"
+            },
+            {
+                "url": "https://www.gatsbyjs.org/",
+                "label": "Gatsby"
+            },
+            {
+                "url": "https://www.netlify.com/",
+                "label": "Netlify"
+            },
+            {
+                "url": "https://www.stackbit.com/",
+                "label": "Stackbit"
+            }
+        ]
+    }
+}

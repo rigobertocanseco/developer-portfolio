@@ -1,0 +1,10 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+ssgVersion: 2.3.30
+buildCommand: npm run build
+publishDir: public
+staticDir: static
+uploadDir: images
+dataDir: src/data
+pagesDir: src/pages
+pageLayoutKey: template

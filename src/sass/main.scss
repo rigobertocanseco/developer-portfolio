@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* Deep oceanic colors*/
+
+$deep-ocean-primary:    #0F111A;   // background
+$deep-ocean-medium:     rgba($deep-ocean-primary, 0.5);
+$deep-ocean-secondary:  #00010A; // dark
+$deep-ocean-accent:     #3A575C;    // primary
+$deep-ocean-red:        #BF616A;       // danger
+$deep-ocean-green:      #A3BE8C;     // success
+$deep-ocean-yellow:     #EBCB8B;    // warning
+$deep-ocean-blue:       #81A1C1;      // info
+$deep-ocean-cyan:       #88C0D0;      // link 1
+$deep-ocean-purple:     #A48EAD;    // link 2
+$deep-ocean-white:      #E5E9F0;     // light
+$deep-ocean-gray-1:     #4C566A;    // grey dark
+$deep-ocean-gray-2:     #3B4252;    // grey darker
+
+/* Custom colors*/
+
+$dark: $deep-ocean-secondary;
+$light: $deep-ocean-white;
+$grey-darker: $deep-ocean-gray-2; // tittle
+$grey-dark: $deep-ocean-gray-1; // text
+$primary: $deep-ocean-accent;
+$info: $deep-ocean-blue;
+$success: $deep-ocean-green;
+$warning: $deep-ocean-yellow;
+$danger: $deep-ocean-red;
+$link: $deep-ocean-cyan;
+$purple: $deep-ocean-purple;
+
+/* Custom variables*/
+
+$body-background-color: $deep-ocean-primary;
+$text-strong: $light;
+$text: $grey-darker;
+$text-light: $grey-dark;
+
+$hr-background-color: $deep-ocean-accent;
+$hr-height: 0.3px;
+$container-max-width: 1252px +(2 * 36);
+
+$link-hover: $grey-darker;
+$link-hover-border: $grey-darker;
+$link-focus: $grey-dark;
+$link-focus-border: $grey-dark;
+
+// navbar
+$navbar-background-color: $deep-ocean-primary;
+$navbar-item-hover-background-color: $deep-ocean-primary;
+$navbar-item-color: $primary;
+$navbar-item-active-color: $link;
+$navbar-item-hover-color: $link;
+
+// footer
+$footer-background-color: $deep-ocean-primary;
+$footer-color: $primary;
+$footer-padding: 0;
+
+// tab
+$tabs-toggle-link-border-color: $deep-ocean-medium;
+$tabs-toggle-link-hover-background-color: $deep-ocean-medium;
+$tabs-toggle-link-hover-border-color: $deep-ocean-medium;
+
+//content
+$content-blockquote-background-color: $deep-ocean-medium;
+$content-heading-line-height: 2.7;
+
+@import "~bulma/bulma.sass";
+@import "imports/animations";
+@import "imports/srollbar";
+
+.hr {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.image.is-224x224 {
+  height: 224px;
+  width: 224px;
+  margin: 0 auto;
+}
+
+.image.is-pie {
+  height: 232px;
+  width: 232px;
+  margin: 0 auto;
+}
+
+body {
+  background: $deep-ocean-primary;
+}
+
+.content table td, .content table th {
+  border: none;
+}
+
+.card, .box {
+  transition-property: box-shadow,transform;
+}
+
+.card-repository:hover, .box-repository:hover {
+  box-shadow: 0 1em 1em rgba($deep-ocean-white,.1);
+  transform: translateY(-.5em)
+}
+
+.card-repository, .box-repository {
+  background-color: $deep-ocean-medium;
+  .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .title.name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 3em;
+  }
+  .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 3em;
+  }
+  .subtitle.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: 5em;
+  }
+  .url, {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .tags {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.card-post {
+  .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 3em;
+  }
+  .content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: 6em;
+  }
+}
+
+.card-post:hover {
+  box-shadow: 0 1em 1em rgba($deep-ocean-white,.1);
+  transform: translateY(-.5em)
+}

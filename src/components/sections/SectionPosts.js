@@ -1,0 +1,46 @@
+import React from 'react';
+import _ from 'lodash';
+
+import CtaButtons from "../CtaButtons";
+import DevToArticles from "../../templates/devto-articles";
+
+export default class SectionPosts extends React.Component {
+  render() {
+    let section = _.get(this.props, 'section', null);
+    return (
+      <div>
+        <section className="hero is-medium" id={_.get(section, 'section_id', null)}>
+          <div className="hero-body">
+            <div className="container is-max-widescreen">
+              <div className="block mb-6 pb-6 has-text-centered">
+                {_.get(section, 'title', null) && (
+                  <p className="title is-1">
+                    {_.get(section, 'title', null)}
+                  </p>
+                )}
+                {_.get(section, 'subtitle', null) && (
+                  <p className="subtitle is-2">
+                    {_.get(section, 'subtitle', null)}
+                  </p>
+                )}
+              </div>
+            </div>
+            <div className="container">
+              <DevToArticles />
+              {_.get(section, 'actions', null) && (
+                <div className="buttons is-centered mt-6 pt-6">
+                  <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+        <div className="hr">
+          <div className="container">
+            <hr/>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
