@@ -3,6 +3,8 @@
 
 This is a website to developers using [gatsby](https://gatsbyjs.com), [bulma](https://bulma.io/), [netlify](https://www.netlify.com/) and [stackbit](https://www.stackbit.com/). Add [github](htts://github.com/) profile to add your information as repositories, languages used and projects. Also add [dev](https://dev.to/) profile to add your articles. 
 
+[img](Request URL: https://github.com/rigobertocanseco/developer-portfolio/blob/main/is-thumb.png)
+
 It was created with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) in under a minute.
 
 ## Requirements
